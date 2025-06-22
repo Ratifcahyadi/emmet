@@ -1,0 +1,32 @@
+.pos {
+    position: relative; /* pos */
+    position: relative; /* pos:r */
+    position: static; /* pos:s */
+    position: absolute; /* pos:a */
+    position: fixed; /* pos:f */
+}
+
+.t .r .b .l {
+    /* top: ; */
+    top: auto; /* t:a */ 
+    /* right: ; */
+    right: auto; /* r:a */
+    /* bottom: ; */
+    bottom: auto; /* b:a */
+    /* left: ; */
+    left: auto; /* l:a */
+}
+
+.z {
+    /* z-index: ; */
+    z-index: auto; /* z:a */
+}
+
+.fl {
+    float: left; /* fl */
+    float: left; /* fl:a */
+    float: none; /* fl:n */
+    float: right; /* fl:r */
+    float: left; /* fl:l */
+}
+
