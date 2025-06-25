@@ -1,9 +1,16 @@
+/* CSS module uses fuzzy search to find uknown abbrebiations, e.g. ov:h === ov-h === oh*/
+/* if abbreviation wasn't found, it is transformed into property name:foo-bar -> foobar:l */
+/* you can prefix abbreviations with hyphen to produce vendor-prefixed properties: -foo */
+/* contoh lain: -border-radius:10px menghasilkan -borderradius:10px */
+/* contoh lain: background-color:red menghasilkan backgroundcolor:red */
+
 .pos {
     position: relative; /* pos */
     position: relative; /* pos:r */
     position: static; /* pos:s */
     position: absolute; /* pos:a */
     position: fixed; /* pos:f */
+    position: sticky; /* pos:st */
 }
 
 .t .r .b .l {
@@ -24,9 +31,50 @@
 
 .fl {
     float: left; /* fl */
-    float: left; /* fl:a */
-    float: none; /* fl:n */
-    float: right; /* fl:r */
     float: left; /* fl:l */
+    float: right; /* fl:r */
+    float: none; /* fl:n */
+    float: auto; /* fl:a */
 }
 
+.cl {
+    clear: left; /* cl:l */
+    clear: right; /* cl:r */
+    clear: both; /* cl:b */
+    clear: none; /* cl:n */
+    clear: auto; /* cl:a */
+}
+
+.d {
+    display: none; /* d:n */
+    display: block; /* d:b */
+    display: flex; /* d:f */
+    display: inline-flex; /* d:if */
+    display: inline; /* d:i */
+    display: inline-block; /* d:ib */
+    display: list-item; /* d:li */
+    display: run-in; /* d:ri */
+    display: cp; /* display compact */
+    display: table; /* d:tb, d:t */
+    display: inline-table; /* d:itb, d:it */
+    display: table-caption; /* d:tbcp */    
+    display: table-column; /* d:tbcol */
+    display: table-column-group; /* d:tbclg, d:tbcolg */
+    display: table-header-group; /* d:tbhdg, d:tbhd */
+    display: table-footer-group; /* d:tbft */
+    display: table-row; /* d:tbr */
+    display: table-row-group; /* d:tbrg, d:tbrg */
+    display: table-cell; /* d:tbc */
+    display: ruby; /* d:r, d:rb */
+    display: ruby-base; /* d:rbs */
+    display: ruby-base-group; /* d:rbsg, rbg */
+    display: ruby-text; /* d:rbt, d:rt */
+    display: ruby-text-group; /* d:rbtg, d:rtg */
+}
+
+.ovh {
+    overflow: hidden; /* ovh */
+    overflow: hidden; /* oh */
+    overflow: hidden; /* ov:h */
+    /* NEXT */
+}
